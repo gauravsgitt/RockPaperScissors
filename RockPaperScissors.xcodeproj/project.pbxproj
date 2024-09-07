@@ -74,6 +74,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4AF791092C8CD11C00ED3E1E /* Build configuration list for PBXNativeTarget "RockPaperScissors" */;
 			buildPhases = (
+				4AF7910C2C8CD12B00ED3E1E /* ShellScript */,
 				4AF790F72C8CD11A00ED3E1E /* Sources */,
 				4AF790F82C8CD11A00ED3E1E /* Frameworks */,
 				4AF790F92C8CD11A00ED3E1E /* Resources */,
@@ -131,6 +132,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4AF7910C2C8CD12B00ED3E1E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\ncd \"$SRCROOT\"\nopen -a Terminal \"$SRCROOT\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4AF790F72C8CD11A00ED3E1E /* Sources */ = {
