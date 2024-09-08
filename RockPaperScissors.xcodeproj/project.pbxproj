@@ -11,6 +11,11 @@
 		4AF791012C8CD11A00ED3E1E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF791002C8CD11A00ED3E1E /* ContentView.swift */; };
 		4AF791032C8CD11C00ED3E1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AF791022C8CD11C00ED3E1E /* Assets.xcassets */; };
 		4AF791062C8CD11C00ED3E1E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AF791052C8CD11C00ED3E1E /* Preview Assets.xcassets */; };
+		4AF791122C8CD3FA00ED3E1E /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF791112C8CD3FA00ED3E1E /* CustomModifiers.swift */; };
+		4AF791142C8CD40500ED3E1E /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF791132C8CD40500ED3E1E /* Extension.swift */; };
+		4AF791162C8CD59700ED3E1E /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF791152C8CD59700ED3E1E /* Enums.swift */; };
+		4AF791182C8D8BCD00ED3E1E /* BackgroundColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF791172C8D8BCD00ED3E1E /* BackgroundColorView.swift */; };
+		4AF7911A2C8D95CD00ED3E1E /* ResizableImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF791192C8D95CD00ED3E1E /* ResizableImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		4AF791002C8CD11A00ED3E1E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4AF791022C8CD11C00ED3E1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4AF791052C8CD11C00ED3E1E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4AF791112C8CD3FA00ED3E1E /* CustomModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifiers.swift; sourceTree = "<group>"; };
+		4AF791132C8CD40500ED3E1E /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		4AF791152C8CD59700ED3E1E /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		4AF791172C8D8BCD00ED3E1E /* BackgroundColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundColorView.swift; sourceTree = "<group>"; };
+		4AF791192C8D95CD00ED3E1E /* ResizableImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizableImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +62,14 @@
 			isa = PBXGroup;
 			children = (
 				4AF790FE2C8CD11A00ED3E1E /* RockPaperScissorsApp.swift */,
+				4AF791112C8CD3FA00ED3E1E /* CustomModifiers.swift */,
+				4AF791132C8CD40500ED3E1E /* Extension.swift */,
 				4AF791002C8CD11A00ED3E1E /* ContentView.swift */,
+				4AF791152C8CD59700ED3E1E /* Enums.swift */,
+				4AF791172C8D8BCD00ED3E1E /* BackgroundColorView.swift */,
 				4AF791022C8CD11C00ED3E1E /* Assets.xcassets */,
 				4AF791042C8CD11C00ED3E1E /* Preview Content */,
+				4AF791192C8D95CD00ED3E1E /* ResizableImage.swift */,
 			);
 			path = RockPaperScissors;
 			sourceTree = "<group>";
@@ -74,7 +89,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4AF791092C8CD11C00ED3E1E /* Build configuration list for PBXNativeTarget "RockPaperScissors" */;
 			buildPhases = (
-				4AF7910C2C8CD12B00ED3E1E /* ShellScript */,
 				4AF790F72C8CD11A00ED3E1E /* Sources */,
 				4AF790F82C8CD11A00ED3E1E /* Frameworks */,
 				4AF790F92C8CD11A00ED3E1E /* Resources */,
@@ -133,33 +147,18 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		4AF7910C2C8CD12B00ED3E1E /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\ncd \"$SRCROOT\"\nopen -a Terminal \"$SRCROOT\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		4AF790F72C8CD11A00ED3E1E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AF791122C8CD3FA00ED3E1E /* CustomModifiers.swift in Sources */,
+				4AF7911A2C8D95CD00ED3E1E /* ResizableImage.swift in Sources */,
 				4AF791012C8CD11A00ED3E1E /* ContentView.swift in Sources */,
+				4AF791162C8CD59700ED3E1E /* Enums.swift in Sources */,
 				4AF790FF2C8CD11A00ED3E1E /* RockPaperScissorsApp.swift in Sources */,
+				4AF791182C8D8BCD00ED3E1E /* BackgroundColorView.swift in Sources */,
+				4AF791142C8CD40500ED3E1E /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
