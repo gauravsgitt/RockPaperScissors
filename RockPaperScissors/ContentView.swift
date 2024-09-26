@@ -19,6 +19,7 @@ struct ContentView: View {
     @State private var opponentSelection = Move.none
     @State private var opponentWins = false
     @State private var youWin = false
+    @State private var disableUserInteraction = false
     
     var opponentWillWin: Bool {
         Bool.random()
@@ -84,6 +85,7 @@ struct ContentView: View {
                                 
                             }
                             .padding(.horizontal, 5)
+                            .disabled(disableUserInteraction)
                         }
                     }
                     
@@ -115,10 +117,11 @@ struct ContentView: View {
                     break
                 }
                 
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                     blurRockImage = true
                     blurPaperImage = true
                     blurScissorImage = true
+                    disableUserInteraction = false
                 }
             }
             .onChange(of: opponentsScore) { oldValue, newValue in
@@ -147,6 +150,7 @@ struct ContentView: View {
     }
     
     private func selectionMade(_ move: Move) {
+        disableUserInteraction = true
         userSelection = move
         if opponentWillWin {
             switch userSelection {
